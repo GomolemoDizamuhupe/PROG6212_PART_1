@@ -119,3 +119,7 @@ INSERT INTO Entries (ParticipantId, CategoryId, EntryDate, Status) VALUES
 (3, 4, '2026-09-05 14:30:00', 'Confirmed'),  -- Sipho enters Knysna 30km Trail Run
 (4, 6, '2026-09-06 11:00:00', 'Confirmed');  -- Amahle enters Sea Point 80km Cycle
  
+-- Results 
+INSERT INTO Results (EntryId, FinishTime, Position, CapturedBy) VALUES
+(1, '00:52:14', 3, 1),
+(2, '00:28:47', 5, 1);
