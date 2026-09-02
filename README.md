@@ -5,6 +5,8 @@ A full-stack web-based event management system for the South African road runnin
 **Module:** PROG6212
 **Student:** Gomolemo Dizamuhupe (ST10491441)
 **Group:** 4
+**GitHub Repo:** [GomolemoDizamuhupe/PROG6212-SQL-SCRIPT-](https://github.com/GomolemoDizamuhupe/PROG6212-SQL-SCRIPT-)
+**Demo Video:** https://youtu.be/ZRrgUtRMAuo
 
 ## Project Structure
 
@@ -12,10 +14,10 @@ This is a Portfolio of Evidence (PoE) built progressively across three parts. Ea
 
 - **Part 1 — System Planning and Database** *(current)*
   Entity Relationship Diagram, full API endpoint plan, and SQL database script. No application code.
-```
-Gomolemo Dizamuhupe(PROG PART 1).pdf     # ERD, API endpoint plan, and SQL script (Sections A–C)
-README.md
-```
+- **Part 2 — RESTful API** *(upcoming)*
+  ASP.NET Core Web API built in C#, connected to the database, with unit tests and GitHub CI/CD.
+- **Part 3 — MVC Web Application** *(upcoming)*
+  MVC front end consuming the API, Azure Blob Storage integration, and Docker containerisation.
 
 ## Roles
 
@@ -41,9 +43,6 @@ Covers Authentication, User Profile, Events, Categories, Routes, Entries, and Re
 
 ### SQL Database Script
 Creates the full `RACEDAY_DB` schema in SQL Server (SSMS): `Users`, `Events`, `Categories`, `Routes`, `Entries`, `Results`, with primary keys, foreign keys, and constraints (`NOT NULL`, `UNIQUE`, `DEFAULT`, `CHECK`). Seeded with 2 Organisers, 2 Participants, 3 Events, categories per event, routes, and sample entries/results. See Section C of `/docs/RaceDay_Part1.pdf`.
-
-### Links
-Youtube: 
 
 ## References
 
