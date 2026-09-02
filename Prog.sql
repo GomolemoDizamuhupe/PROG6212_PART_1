@@ -26,3 +26,15 @@ CREATE TABLE Events (
     Location VARCHAR(150) NOT NULL,
     FOREIGN KEY (OrganiserId) REFERENCES Users(UserId)
 );
+
+-- Categories table
+CREATE TABLE Categories (
+    CategoryId INT IDENTITY(1,1) PRIMARY KEY,
+    EventId INT NOT NULL,
+    Name VARCHAR(50) NOT NULL,
+    DistanceKm DECIMAL(5,2) NOT NULL,
+    MaxParticipants INT NOT NULL DEFAULT 500,
+    CONSTRAINT FK_Categories_Event FOREIGN KEY (EventId)
+    REFERENCES Events(EventId)
+);
+
