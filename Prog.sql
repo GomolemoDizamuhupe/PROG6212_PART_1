@@ -15,3 +15,14 @@ CREATE TABLE Users (
     CONSTRAINT CK_Users_Role 
     CHECK (Role IN ('organiser', 'participant'))
 );
+
+-- Events table
+CREATE TABLE Events (
+    EventId INT IDENTITY(1,1) PRIMARY KEY,
+    OrganiserId INT NOT NULL,
+    Name VARCHAR(150) NOT NULL,
+    Description VARCHAR(255) NULL,
+    EventDate DATE NOT NULL,
+    Location VARCHAR(150) NOT NULL,
+    FOREIGN KEY (OrganiserId) REFERENCES Users(UserId)
+);
