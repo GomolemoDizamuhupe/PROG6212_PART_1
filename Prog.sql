@@ -64,3 +64,16 @@ CREATE TABLE Entries (
     REFERENCES Categories(CategoryId),
     CONSTRAINT UQ_Entries_Participant_Category UNIQUE (ParticipantId, CategoryId)
 );
+
+-- Results table
+CREATE TABLE Results (
+    ResultId INT IDENTITY(1,1) PRIMARY KEY,
+    EntryId INT NOT NULL UNIQUE,
+    FinishTime TIME NOT NULL,
+    Position INT NULL,
+    CapturedBy INT NOT NULL,
+    CONSTRAINT FK_Results_Entry FOREIGN KEY (EntryId)
+    REFERENCES Entries(EntryId),
+    CONSTRAINT FK_Results_CapturedBy FOREIGN KEY (CapturedBy)
+    REFERENCES Users(UserId)
+);
