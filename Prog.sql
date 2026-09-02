@@ -112,3 +112,10 @@ INSERT INTO Routes (CategoryId, StartPoint, EndPoint, ElevationGain, MapUrl) VAL
 (5, 'Mouille Point Lighthouse',    'Camps Bay Beach',          45,  'https://maps.raceday.co.za/seapoint-40km'),
 (6, 'Mouille Point Lighthouse',    'Hout Bay Harbour',         90,  'https://maps.raceday.co.za/seapoint-80km');
  
+-- Entries
+INSERT INTO Entries (ParticipantId, CategoryId, EntryDate, Status) VALUES
+(3, 2, '2026-09-01 09:00:00', 'Confirmed'),  -- Sipho enters Sandton 10km
+(4, 1, '2026-09-01 09:15:00', 'Confirmed'),  -- Amahle enters Sandton 5km
+(3, 4, '2026-09-05 14:30:00', 'Confirmed'),  -- Sipho enters Knysna 30km Trail Run
+(4, 6, '2026-09-06 11:00:00', 'Confirmed');  -- Amahle enters Sea Point 80km Cycle
+ 
