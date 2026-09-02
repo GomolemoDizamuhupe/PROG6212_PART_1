@@ -47,7 +47,7 @@ CREATE TABLE Routes (
     ElevationGain INT NULL,
     MapUrl VARCHAR(255) NULL,
     CONSTRAINT FK_Routes_Category FOREIGN KEY (CategoryId)
-    REFERENCES dbo.Categories(CategoryId)
+    REFERENCES Categories(CategoryId)
 );
 
 -- Entries table
