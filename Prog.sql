@@ -88,3 +88,9 @@ INSERT INTO Users (Name, Surname, Email, PasswordHash, Role) VALUES
 ('Sipho', 'Nkosi',    'sipho.nkosi@gmail.com',    'HASH_PLACEHOLDER_3', 'participant'),
 ('Amahle', 'van Wyk', 'amahle.vanwyk@gmail.com',  'HASH_PLACEHOLDER_4', 'participant');
  
+-- Events (3)
+INSERT INTO Events (OrganiserId, Name, Description, EventDate, Location) VALUES
+(1, 'Sandton City Fun Run',         'A community road running event through Sandton CBD.',       '2026-10-18', 'Sandton, Johannesburg'),
+(2, 'Knysna Forest Trail Challenge','A scenic trail running and walking event through indigenous forest.', '2026-11-08', 'Knysna, Western Cape'),
+(1, 'Sea Point Cycle Classic',      'A charity cycling event along the Atlantic seaboard.',      '2026-11-22', 'Cape Town, Western Cape');
+ 
