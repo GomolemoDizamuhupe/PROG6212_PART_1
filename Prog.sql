@@ -82,3 +82,9 @@ CREATE TABLE Results (
 INSERT INTO Users (Name, Surname, Email, PasswordHash, Role) VALUES
 ('Thabo', 'Mokoena',  'thabo.mokoena@raceday.co.za',   'HASH_PLACEHOLDER_1', 'organiser'),
 ('Lindiwe', 'Dlamini', 'lindiwe.dlamini@raceday.co.za', 'HASH_PLACEHOLDER_2', 'organiser');
+
+-- Participants (2)
+INSERT INTO Users (Name, Surname, Email, PasswordHash, Role) VALUES
+('Sipho', 'Nkosi',    'sipho.nkosi@gmail.com',    'HASH_PLACEHOLDER_3', 'participant'),
+('Amahle', 'van Wyk', 'amahle.vanwyk@gmail.com',  'HASH_PLACEHOLDER_4', 'participant');
+ 
