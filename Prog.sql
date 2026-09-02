@@ -102,3 +102,13 @@ INSERT INTO Categories (EventId, Name, DistanceKm, MaxParticipants) VALUES
 (2, '30km Trail Run',   30.00, 250),
 (3, '40km Cycle Route', 40.00, 400),
 (3, '80km Cycle Route', 80.00, 400);
+
+-- Routes (one per category)
+INSERT INTO Routes (CategoryId, StartPoint, EndPoint, ElevationGain, MapUrl) VALUES
+(1, 'Sandton Gautrain Station',    'Sandton Gautrain Station', 60,  'https://maps.raceday.co.za/sandton-5km'),
+(2, 'Sandton Gautrain Station',    'Sandton Gautrain Station', 120, 'https://maps.raceday.co.za/sandton-10km'),
+(3, 'Knysna Elephant Park',        'Diepwalle Forest Station', 180, 'https://maps.raceday.co.za/knysna-15km'),
+(4, 'Knysna Elephant Park',        'Diepwalle Forest Station', 310, 'https://maps.raceday.co.za/knysna-30km'),
+(5, 'Mouille Point Lighthouse',    'Camps Bay Beach',          45,  'https://maps.raceday.co.za/seapoint-40km'),
+(6, 'Mouille Point Lighthouse',    'Hout Bay Harbour',         90,  'https://maps.raceday.co.za/seapoint-80km');
+ 
