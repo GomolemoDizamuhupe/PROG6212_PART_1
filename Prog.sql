@@ -38,3 +38,14 @@ CREATE TABLE Categories (
     REFERENCES Events(EventId)
 );
 
+-- Routes table
+CREATE TABLE Routes (
+    RouteId INT IDENTITY(1,1) PRIMARY KEY,
+    CategoryId INT NOT NULL,
+    StartPoint VARCHAR(150) NOT NULL,
+    EndPoint VARCHAR(150) NOT NULL,
+    ElevationGain INT NULL,
+    MapUrl VARCHAR(255) NULL,
+    CONSTRAINT FK_Routes_Category FOREIGN KEY (CategoryId)
+    REFERENCES dbo.Categories(CategoryId)
+);
