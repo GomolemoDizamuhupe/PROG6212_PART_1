@@ -94,3 +94,11 @@ INSERT INTO Events (OrganiserId, Name, Description, EventDate, Location) VALUES
 (2, 'Knysna Forest Trail Challenge','A scenic trail running and walking event through indigenous forest.', '2026-11-08', 'Knysna, Western Cape'),
 (1, 'Sea Point Cycle Classic',      'A charity cycling event along the Atlantic seaboard.',      '2026-11-22', 'Cape Town, Western Cape');
  
+-- Categories (each event gets multiple categories)
+INSERT INTO Categories (EventId, Name, DistanceKm, MaxParticipants) VALUES
+(1, '5km Fun Run',      5.00,  500),
+(1, '10km Road Run',    10.00, 500),
+(2, '15km Trail Walk',  15.00, 250),
+(2, '30km Trail Run',   30.00, 250),
+(3, '40km Cycle Route', 40.00, 400),
+(3, '80km Cycle Route', 80.00, 400);
