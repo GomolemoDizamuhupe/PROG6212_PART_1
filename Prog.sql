@@ -77,3 +77,7 @@ CREATE TABLE Results (
     CONSTRAINT FK_Results_CapturedBy FOREIGN KEY (CapturedBy)
     REFERENCES Users(UserId)
 );
+
+-- Organisers (2)
+INSERT INTO Users (Name, Surname, Email, PasswordHash, Role) VALUES
+('Thabo', 'Mokoena',  'thabo.mokoena@raceday.co.za',   'HASH_PLACEHOLDER_1', 'organiser');
