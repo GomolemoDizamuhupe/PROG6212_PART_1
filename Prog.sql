@@ -49,3 +49,18 @@ CREATE TABLE Routes (
     CONSTRAINT FK_Routes_Category FOREIGN KEY (CategoryId)
     REFERENCES dbo.Categories(CategoryId)
 );
+
+-- Entries table
+CREATE TABLE Entries (
+    EntryId INT IDENTITY(1,1) PRIMARY KEY,
+    ParticipantId INT NOT NULL,
+    CategoryId INT NOT NULL,
+    EntryDate DATETIME NOT NULL,
+    Status VARCHAR(20) NOT NULL DEFAULT 'Confirmed'
+    CONSTRAINT CK_Entries_Status CHECK (Status IN ('Pending', 'Confirmed', 'Cancelled')),
+    CONSTRAINT FK_Entries_Participant FOREIGN KEY (ParticipantId)
+    REFERENCES Users(UserId),
+    CONSTRAINT FK_Entries_Category FOREIGN KEY (CategoryId)
+    REFERENCES Categories(CategoryId),
+    CONSTRAINT UQ_Entries_Participant_Category UNIQUE (ParticipantId, CategoryId)
+);
