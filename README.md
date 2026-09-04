@@ -42,6 +42,10 @@ Covers Authentication, User Profile, Events, Categories, Routes, Entries, and Re
 ### SQL Database Script
 Creates the full `RACEDAY_DB` schema in SQL Server (SSMS): `Users`, `Events`, `Categories`, `Routes`, `Entries`, `Results`, with primary keys, foreign keys, and constraints (`NOT NULL`, `UNIQUE`, `DEFAULT`, `CHECK`). Seeded with 2 Organisers, 2 Participants, 3 Events, categories per event, routes, and sample entries/results.
 
+## GITHUB ACTION SCREENSHOOT
+<img width="1366" height="741" alt="image" src="https://github.com/user-attachments/assets/baf79d82-a07e-46c6-ad4e-6ff04a697aa2" />
+
+
 ## References
 
 - diagrams.net (Draw.io), 2026. *Draw.io: Free online diagram software.* Available at: https://www.drawio.com/
