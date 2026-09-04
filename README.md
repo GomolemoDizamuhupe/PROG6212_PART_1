@@ -36,13 +36,11 @@ Six entities: `User`, `Event`, `Category`, `Route`, `Entry`, `Result`. Relations
 - User submits many Entries (1:*); Category receives many Entries (1:*)
 - Entry produces one Result (1:1)
 
-See Section A of `/docs/RaceDay_Part1.pdf`.
-
 ### API Endpoint Plan
-Covers Authentication, User Profile, Events, Categories, Routes, Entries, and Results — HTTP method, route, description, role required, request body, and expected response (including failure codes) for each endpoint. See Section B of `/docs/RaceDay_Part1.pdf`.
+Covers Authentication, User Profile, Events, Categories, Routes, Entries, and Results — HTTP method, route, description, role required, request body, and expected response (including failure codes) for each endpoint. 
 
 ### SQL Database Script
-Creates the full `RACEDAY_DB` schema in SQL Server (SSMS): `Users`, `Events`, `Categories`, `Routes`, `Entries`, `Results`, with primary keys, foreign keys, and constraints (`NOT NULL`, `UNIQUE`, `DEFAULT`, `CHECK`). Seeded with 2 Organisers, 2 Participants, 3 Events, categories per event, routes, and sample entries/results. See Section C of `/docs/RaceDay_Part1.pdf`.
+Creates the full `RACEDAY_DB` schema in SQL Server (SSMS): `Users`, `Events`, `Categories`, `Routes`, `Entries`, `Results`, with primary keys, foreign keys, and constraints (`NOT NULL`, `UNIQUE`, `DEFAULT`, `CHECK`). Seeded with 2 Organisers, 2 Participants, 3 Events, categories per event, routes, and sample entries/results.
 
 ## References
 
